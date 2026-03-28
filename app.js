@@ -136,7 +136,7 @@ console.log('\n', userProfile)
 // Your code here:
 
 const defaultParameters = ((noun = "cat", adjective = "orange") => {
-  console.log('\n', 'The', noun, 'is', adjective)
+  console.log('\n' + 'The', noun, 'is', adjective)
 })
 
 defaultParameters()
@@ -159,6 +159,31 @@ const pizza = 'tasty';
 
 let tasty = pizza === 'tasty' ? 'yum':'yuck'
 
-console.log('\n', tasty)
+console.log('\n' + tasty)
+
+
+// ! Exercise 10:
+// ! 10.1: Set language
+// a. Construct a single line of code that assigns a default value using the 
+//    logical OR operator. This line should match the logic of the following 
+//    statement:
+//
+//    "lang is equal to localLangConfig or the default value of English."
+//
+// b. Create a variable called `lang`.
+//
+// c. Assign `lang` the value of localLangConfig or 'en' as a default if 
+//    `localLangConfig is falsy.
+//
+// d. Log the value of `lang` to the console.
+//
+// Your code here (localLangConfig is provided to get you started):
+
+// Simulated language configuration (change this variable to test)
+const localLangConfig = null; // Change to 'es', 'fr', etc., or leave it `null`.
+
+const lang = localLangConfig || 'en'
+
+console.log(`\nLanguage: ${lang}`)
 
 
