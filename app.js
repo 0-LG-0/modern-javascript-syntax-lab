@@ -135,9 +135,9 @@ console.log('\n', userProfile)
 //
 // Your code here:
 
-const defaultParameters = ((noun = "cat", adjective = "orange") => {
-  console.log('\n' + 'The', noun, 'is', adjective)
-})
+const defaultParameters = (noun = "cat", adjective = "orange") => {
+  console.log(`\nThe ${noun} is ${adjective}`)
+}
 
 defaultParameters()
 
